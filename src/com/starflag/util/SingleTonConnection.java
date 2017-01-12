@@ -11,7 +11,7 @@ public static Connection connection() throws SQLException,Exception
 	if(connection==null || connection.isClosed())
 		{
 			Class.forName("oracle.jdbc.driver.OracleDriver");
-			 connection=DriverManager.getConnection("jdbc:oracle:thin:mkathula/Database@db.csep.umflint.edu:1521:csep");
+			 connection=DriverManager.getConnection("jdbc:oracle:thin:root/manikanta@oid.cbgzh5cglbfm.us-east-2.rds.amazonaws.com:1521:ORCL");
 			System.out.println(connection);
 		}
 	connection.setAutoCommit(false);
